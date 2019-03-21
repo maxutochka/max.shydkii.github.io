@@ -1,0 +1,101 @@
+<html> 
+<head> 
+<title>canvasExample</title> 
+<meta charset='utf-8' /> 
+<style> 
+a.button.purple { 
+background: #e8c4e4; 
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e8c4e4), to(#d698d0)); 
+background: -moz-linear-gradient(#e8c4e4, #d698d0); 
+background: linear-gradient(#e8c4e4, #d698d0); 
+border: solid 1px #da9fd4; 
+border-bottom: solid 3px #946890; 
+box-shadow: inset 0 0 0 1px #f2dcef; 
+color: #7b5777; 
+text-shadow: 0 1px 0 #eacae6; } 
+a.button.purple:hover { 
+background: #daa2d4; 
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#daa2d4), to(#e0b1db)); 
+background: -moz-linear-gradient(#daa2d4, #e0b1db); 
+background: linear-gradient(#daa2d4, #e0b1db); 
+border: solid 1px #ca91c4; 
+border-bottom: solid 3px #946890; 
+box-shadow: inset 0 0 0 1px #e9c7e6; } 
+a.button.purple:active { 
+background: #d49ace; 
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d49ace), to(#cc94c6)); 
+background: -moz-linear-gradient(#d49ace, #cc94c6); 
+background: linear-gradient(#d49ace, #cc94c6); 
+border: solid 1px #8e678a; 
+box-shadow: inset 0 10px 15px 0 #ba87b5; } 
+</style> 
+<script> 
+function clean(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.fillStyle = "white"; 
+ctx.fillRect(0, 0, 640, 480); 
+} 
+function er1(){
+clean()
+drawpoint()
+var X1=Number(document.getElementById("X1_znach").value); 
+var Y1=Number(document.getElementById("Y1_znach").value); 
+var X2=Number(document.getElementById("X2_znach").value);
+var Y2=Number(document.getElementById("Y2_znach").value);
+var X3=Number(document.getElementById("X3_znach").value); 
+var Y3=Number(document.getElementById("Y3_znach").value); 
+var X4=Number(document.getElementById("X4_znach").value);
+var Y4=Number(document.getElementById("Y4_znach").value);
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.strokeStyle = 'black';
+ctx.moveTo(320+X1, 240-Y1);
+ctx.lineTo(320+X1, 240-Y2);
+ctx.lineTo(320+X2, 240-Y2);
+ctx.lineTo(320+X2, 240-Y1);
+ctx.stroke();
+ctx.moveTo(320+X3, 240-Y3);
+ctx.lineTo(320+X3, 240-Y4);
+ctx.lineTo(320+X4, 240-Y4);
+ctx.lineTo(320+X4, 240-Y3);
+ctx.stroke();
+} 
+function drawpoint() { 
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+x=320+x*10; 
+y=240-y*10; 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.strokeStyle = 'black'; 
+ctx.arc(x, y, 2, 0, 2 * Math.PI); 
+ctx.stroke(); 
+}
+
+</script> 
+</head> 
+<body> 
+
+x левый нижний угол 1=<input type="text" value="0" id="X1_znach">
+y левый нижний угол 1=<input type="text" value="0" id="Y1_znach">
+x правый верхний угол 1=<input type="text" value="0" id="X2_znach">
+y правый верхний угол 1=<input type="text" value="0" id="Y2_znach">
+x левый нижний угол 2=<input type="text" value="0" id="X3_znach">
+y левый нижний угол 2=<input type="text" value="0" id="Y3_znach">
+x правый верхний угол 2=<input type="text" value="0" id="X4_znach">
+y правый верхний угол 2=<input type="text" value="0" id="Y4_znach">
+<a href="#" onclick="clean()" class="button purple">Очистить</a> 
+<a href="#" onclick="er1()" class="button purple">Работа</a> 
+ 
+<br> 
+<canvas width='640' height='480' id='example'>Обновите браузер</canvas> 
+<br> 
+ 
+<br> 
+ 
+<div id="otvet"></div> 
+</html>
+
