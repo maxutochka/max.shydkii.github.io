@@ -66,9 +66,9 @@ ctx.stroke();
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 if (x <= -2 && y>=1) {
-document.getElementById("otvet").innerHTML = "Òî÷êà â îáëàñòè";
+document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
-document.getElementById("otvet").innerHTML = "Òî÷êà íå â îáëàñòè"; 
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
 }
 
@@ -93,9 +93,9 @@ ctx.stroke();
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 if (y <= 3/2 && y>=-2) {
-document.getElementById("otvet").innerHTML = "Òî÷êà â îáëàñòè";
+document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
-document.getElementById("otvet").innerHTML = "Òî÷êà íå â îáëàñòè"; 
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
 }
 
@@ -122,9 +122,9 @@ ctx.stroke();
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 if (x>=1 && x<= 2 && y<=4) {
-document.getElementById("otvet").innerHTML = "Òî÷êà â îáëàñòè";
+document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
-document.getElementById("otvet").innerHTML = "Òî÷êà íå â îáëàñòè"; 
+document.getElementById("otvet").innerHTML = "Точка не в области";  
 }
 }
 
@@ -150,9 +150,9 @@ ctx.stroke();
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 if (x <= -2 && y>=1) {
-document.getElementById("otvet").innerHTML = "Òî÷êà â îáëàñòè";
+document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
-document.getElementById("otvet").innerHTML = "Òî÷êà íå â îáëàñòè"; 
+document.getElementById("otvet").innerHTML = "Точка не в области";  
 }
 }
 
@@ -178,9 +178,9 @@ ctx.stroke();
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 if (x <= -2 && y>=1) {
-document.getElementById("otvet").innerHTML = "Òî÷êà â îáëàñòè";
+document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
-document.getElementById("otvet").innerHTML = "Òî÷êà íå â îáëàñòè"; 
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
 }
 
@@ -207,9 +207,9 @@ ctx.stroke();
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 if (x <= -2 && y>=1) {
-document.getElementById("otvet").innerHTML = "Òî÷êà â îáëàñòè";
+document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
-document.getElementById("otvet").innerHTML = "Òî÷êà íå â îáëàñòè"; 
+document.getElementById("otvet").innerHTML = "Точка не в области";  
 }
 }
 
@@ -235,9 +235,9 @@ ctx.stroke();
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 if (x <= -2 && y>=1) {
-document.getElementById("otvet").innerHTML = "Òî÷êà â îáëàñòè";
+document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
-document.getElementById("otvet").innerHTML = "Òî÷êà íå â îáëàñòè"; 
+document.getElementById("otvet").innerHTML = "Точка не в области";  
 }
 }
 
@@ -264,9 +264,9 @@ ctx.stroke();
 x=Number(document.getElementById("x_znach").value); 
 y=Number(document.getElementById("y_znach").value); 
 if (x <= -2 && y>=1) {
-document.getElementById("otvet").innerHTML = "Òî÷êà â îáëàñòè";
+document.getElementById("otvet").innerHTML = "Точка в области";
 } else {
-document.getElementById("otvet").innerHTML = "Òî÷êà íå â îáëàñòè"; 
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
 }
 
@@ -287,23 +287,21 @@ ctx.stroke();
 <body>
 x=<input type="text" value="0" id="x_znach">
 y=<input type="text" value="0" id="y_znach">
-<a href="#" onclick="clean()" class="button purple">Î÷èñòèòü</a>
-<a href="#" onclick="er1()" class="button purple">3.32à</a>
-<a href="#" onclick="er2()" class="button purple">3.32á</a>
-<a href="#" onclick="er3()" class="button purple">3.32â</a>
-<a href="#" onclick="er4()" class="button purple">3.32ã</a>
-<a href="#" onclick="er5()" class="button purple">3.32ä</a>
-<a href="#" onclick="er6()" class="button purple">3.32å</a>
-<a href="#" onclick="er7()" class="button purple">3.32æ</a>
-<a href="#" onclick="er8()" class="button purple">3.32ç</a>
+<a href="#" onclick="clean()" class="button purple">Очистить</a>
+<a href="#" onclick="er1()" class="button purple">3.32а</a>
+<a href="#" onclick="er2()" class="button purple">3.32б</a>
+<a href="#" onclick="er3()" class="button purple">3.32в</a>
+<a href="#" onclick="er4()" class="button purple">3.32г</a>
+<a href="#" onclick="er5()" class="button purple">3.32д</a>
+<a href="#" onclick="er6()" class="button purple">3.32е</a>
+<a href="#" onclick="er7()" class="button purple">3.32ж</a>
+<a href="#" onclick="er8()" class="button purple">3.32з</a>
 <br> 
 
 <div id="otvet"></div>
 
 <br>
-<canvas width='640' height='480' id='example'>Îáíîâèòå áðàóçåð</canvas>
+<canvas width='640' height='480' id='example'>Обновите браузер</canvas>
 <br>
 </body>
 </html>
-
-© 2019 GitHub, Inc.
