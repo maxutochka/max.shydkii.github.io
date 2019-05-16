@@ -1,0 +1,90 @@
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+        function func1() {
+      n = Number(document.getElementById("n_znach").value);
+      var k = 0;
+      var i = 1;
+          while (i < n+1) {
+        k=k+(1/i);
+        i++;
+      }
+      document.getElementById("otvet1").innerHTML = k;
+    }
+    function func2() {
+      n = Number(document.getElementById("n_znach").value);
+      var k = 0;
+      var i = 2;
+          while (i < 11) {
+        k = k + (i/(i+1)) ;
+        i++;
+      }
+      document.getElementById("otvet2").innerHTML = k;
+    }
+    function func3() {
+      n = Number(document.getElementById("n3_znach").value);
+      var k = 0;
+      var i = 0;
+      var a = 1;
+          while (i < 9) {
+        k = k + 1/a;
+        a = a * 3;
+        i++;
+      }
+      document.getElementById("otvet3").innerHTML = k;
+    }
+    function func4() {
+      n = Number(document.getElementById("n4_znach").value);
+      var d = 1;
+      var k = 0;
+      var i = 1;
+          while (i < n+1) {
+        k = k + (1/i*d);
+        d = d * (-1);
+        i++;
+      }
+      document.getElementById("otvet4").innerHTML = k;
+    }
+  </script>
+</head>
+
+<body>
+
+
+    <h1>Цикл 5.32</h1> 
+    n=<input type="text" value="1" id="n_znach">
+   <a href="#" onclick="func1()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet1"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл 5.33</h1> 
+    n=<input type="text" value="10" id="n2_znach">
+   <a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet2"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл 5.34</h1> 
+    n=<input type="text" value="8" id="n3_znach">
+   <a href="#" onclick="func3()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet3"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл 5.35</h1> 
+    n=<input type="text" value="1" id="n4_znach">
+   <a href="#" onclick="func4()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet4"></div>
+<br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
